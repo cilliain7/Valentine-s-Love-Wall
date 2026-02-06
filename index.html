@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Love Wall | Share Your Heart</title>
+
+    <!-- Fonts: Standard imports for nice typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Ambient background glow effect -->
+    <div class="ambient-background"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="glass-nav">
+        <!-- Logo -->
+        <div class="logo">Heart<span class="highlight">Beat</span></div>
+    </nav>
+
+    <!-- Hero Section: The main welcome area -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Share the <span class="gradient-text">Love</span></h1>
+            <p class="hero-subtitle">Post a note on our digital wall.</p>
+
+            <div class="hero-actions">
+                <!-- Main interaction buttons -->
+                <button class="btn-primary glow-effect" onclick="scrollToWall()">View Wall</button>
+                <button class="btn-secondary" onclick="openModal()">Write a Note</button>
+            </div>
+        </div>
+
+        <!-- Container for the floating hearts animation -->
+        <div class="floating-hearts-container" id="hearts-container"></div>
+    </header>
+
+    <!-- Love Wall Section: Displays all the cards -->
+    <section id="love-wall" class="love-wall-section">
+        <div class="section-header">
+            <h2>Digital Love Wall</h2>
+            <p>Real messages from real romantics.</p>
+        </div>
+
+        <!-- Grid where cards are inserted by JavaScript -->
+        <div class="masonry-grid" id="wall-grid"></div>
+    </section>
+
+    <!-- Submission Modal: Hidden by default -->
+    <div id="submission-modal" class="modal-overlay hidden">
+        <div class="modal-glass">
+            <button class="close-modal">&times;</button>
+            <h3>Write a Love Note</h3>
+
+            <!-- Note Form -->
+            <form id="love-form">
+                <div class="form-group">
+                    <label>To</label>
+                    <input type="text" placeholder="Name or Nickname" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Pour your heart out..." maxlength="280" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>From</label>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Post Note</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 HeartBeat. Spread Love.</p>
+    </footer>
+
+    <!-- Main Logic Script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
