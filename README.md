@@ -51,6 +51,8 @@ npm install
 
 # Run the project
 npm start
+
+
 💡 Ideas for Improvement
 💬 Add replies or comments to notes
 🔍 Search/filter the Love Wall
@@ -59,7 +61,6 @@ npm start
 🧹 Moderation tools
 📜 License
 
-(Add your license here, e.g. MIT)
 
 💖 Final Note
 
