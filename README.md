@@ -53,6 +53,7 @@ npm install
 npm start
 
 
+
 💡 Ideas for Improvement
 💬 Add replies or comments to notes
 🔍 Search/filter the Love Wall
